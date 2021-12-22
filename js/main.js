@@ -26,6 +26,7 @@ const updateTotalPrice = () => {
 	if (checkWalls.checked) addCost(checkWalls.value)
 
 	// вывод на экран
+	totalPrice = parseInt(totalPrice)
 	const formatter = new Intl.NumberFormat('ru')
 	totalPriceElem.innerText = formatter.format(totalPrice)
 }
